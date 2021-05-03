@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , intial-scale =1.0" >
+        <title>Tech Conference | Home</title>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+<div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="header-logo">
+            <img src="{%static 'images/menu.png' %}"height="50px"width="50px">
+        </div>
+        <nav>
+            <ul id="menuitems">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'maps' %}">Maps</a></li>
+            </ul>
+        </nav>
+    </div>
+ <div class="row">
+    <div class="col-2">  
+            <h1> 
+                <h1>Welcome to the<br>Annual Your Work Technology Conference 2021.</h1>
+                <h1>1st - 4th May</h1>
+                <h2>Success comes to those brave enough to execute their ideas!</h2>
+                <h2>1st - 4th May at Nkoyoyo Hall, UCU Main Campus.</h2>
+                <a href="{% url 'registeration' %}" class="btn">Register Now &#8594; </a>
+            </h1>
+    </div>
+ </div>
+ </div>
+</div>
+<!---------------Committee-------------->
+<div class="committee">
+     <h2 class="title">Committee Members</h2>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <p><b>Chief Executive Officer, MTN Uganda.</b></p>
+                <br>
+                <p><b>Secretary</b></p>
+                <img src="{% static 'images/user-1.png' %}">
+                <h3>Sean Parker</h3>
+            </div>
+            <div class="col-3">         
+                <p><b>Chief Technology Officer, Google Uganda Field Office.</b></p>
+                <br>
+               <p><b>Chairperson</b></p>
+                <img src="{% static 'images/user-3.png' %}">
+                <h3>Mable Joe</h3>
+            </div>
+            <div class="col-3">      
+                <p><b>Dean Faculty of Science of Technology, UCU.</b></p>
+                <br>
+                <p><b>Chief Organiser</b></p>
+                <img src="{% static 'images/ortis.jpg' %}">
+                <h3>Otim William Gerison</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Program-->
+<div class="program">
+     <h2 class="title">Program</h2>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <p><b>Time: 9:00AM - 9:30AM</b></p>
+                <p><b>Event: Opening Prayer</b></p>
+                <br>
+                <p><b>Person Incharge: Rev.Pius Obonyo</b></p>           
+            </div>
+            <div class="col-3">
+                <p><b>Time: 9:30AM - 10:00AM</b></p>
+                <p><b>Event: Opening Remarks</b></p>
+                <br>
+                <p><b>Person Incharge: Assoc.Prof. Otim William Gerison</b></p>         
+            </div>
+            <div class="col-3">
+                <p><b>Time: 10:00AM - 1:00PM</b></p>
+                <p><b>Event: Presentations</b></p>
+                <br>
+                <p><b>Person Incharge: Sean Parker</b></p>         
+            </div>
+            <div class="col-3">
+                <p><b>Time: 1:00PM - 2:00PM</b></p>
+                <p><b>Event: Lunch</b></p>
+                <br>
+                <p><b>Person Incharge: Patricia Catering</b></p>              
+            </div>
+<div class="col-3"> 
+                <p><b>Time: 2:00PM - 4:00PM</b></p>
+                <p><b>Event: Presentations</b></p>
+                <br>
+                <p><b>Person Incharge: Sean Parker</b></p>               
+            </div>
+<div class="col-3">
+                <p><b>Time: 4:00PM - 4:30PM</b></p>
+                <p><b>Event: Closing Remarks</b></p>
+                <br>
+                <p><b>Person Incharge: Mable Joe</b></p>             
+            </div>
+        <div class="col-3">
+                <p><b>Time: 4:30PM - 5:00PM</b></p>
+                <p><b>Event: Closing Prayer</b></p>
+                <br>
+                <p><b>Person Incharge: Rev.Pius Obonyo</b></p>            
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------Contacts-------------->
+    <div class="contacts">
+     <h2 class="title">Contacts</h2>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <p><b>Contacts</b></p>
+                <p><b>+256775945681 - Paul</b></p>
+                <br>
+                <p><b>+256758338315 - Bruno</b></p>
+                <br>
+                <p><b>+256726045318 - Amad</b></p>              
+            </div>
+        </div>
+    </div>
+<!---------------partners-------------->
+<div class="partners">
+     <h2 class="title">Partners</h2>
+<div class="small-container">
+    <div class="row">
+        <div class="col-5">
+            <img src="{% static 'images/ucc.png' %}">
+        </div>
+        <div class="col-5">
+            <img src="{% static 'images/myi9uotn.png' %}">
+        </div>
+        <div class="col-5">
+            <img src="{% static 'images/iv.png' %}">
+        </div>
+        <div class="col-5">
+            <img src="{% static 'images/ob.jfif' %}">
+        </div>
+        <div class="col-5">
+            <img src="{% static 'images/google.png' %}">
+        </div>
+    </div>
+</div>
+</div>
+<!--------------Footer-------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download app for Android and iOS mobile phone.</p>
+                <div class="app-logo">
+                    <img src="{% static 'images/play-store.png' %}">
+                    <img src="{% static 'images/app-store.png' %}">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="{% static 'images/ortis.jpg' %}">
+                <p>Our purpose is to bring together different ideas into fruition.</p>
+                <p>OTIM WILLIAM GERISON S19B23/421 A87886</p>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>FaceBook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>WhatsApp</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Otim Designs</p>
+    </div>
+</div>
+<!------Js for toggle menu------>
+<script>
+    var menuitems= document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px") {
+            menuitems.style.maxHeight="200px"
+        }
+        else
+        {
+            menuitems.style.maxHeight="0px"
+        }
+    }
+</script>
+    </body>
+</html>

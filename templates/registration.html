@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , intial-scale =1.0" >
+        <title>Tech Conference | Registration</title>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'maps' %}">Maps</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!---------------form-------------->
+<center>
+<form class="form-inline" action="{% url 'registeration' %}" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <b><label for="fullname">Full Name:</label></b>
+        <br>
+        <input type="text" name="fullname" class="form-control" placeholder="Enter Full Name" required="required" />
+    </div>
+    <br>
+    <div class="form-group">
+        <b><label for="emails">Email:</label></b>
+        <br>
+        <input type="email" name="emails" class="form-control" placeholder="Enter Email" required="required" />
+    </div>
+    <br>
+    <div class="form-group">
+        <b><label for="phone">Phone Number:</label></b>
+        <br>
+        <input type="text" name="phone" class="form-control" placeholder="Enter Phone Number" required="required" />
+    </div>
+    <br>
+    <b class="form-group">
+        <b></b><label for="address">Address:</label></b>
+        <br>
+        <input type="text" name="address" class="form-control" placeholder="Enter Address" required="required" />
+    </div>
+    <br>
+    <br class="form-group">
+        <b><label for="capacity">Capacity:</label></b>
+        <br>
+        <input type="text" name="capacity" class="form-control" placeholder="Enter Capacity" required="required" />
+    </div>
+    <br> 
+    <br>
+    <div class="form-group">
+        <b><label for="title">Research Project Title:</label></b>
+        <br>
+        <input type="text" name="title" class="form-control" placeholder="Enter Title"  />
+     </div>
+<br>
+    <div class="form-group">
+        <b><label for="description">Description:</label></b>
+        <br>
+        <input type="text" name="description" class="form-control" placeholder="Description"  />
+    </div>
+<br>
+    <button type="submit "name="register" class="btn btn-sm btn-success ">Register</button>
+</form>
+</center>
+<!---------------partners-------------->
+<div class="partners">
+    <h2 class="title">Partners</h2>
+<div class="small-container">
+   <div class="row">
+       <div class="col-5">
+           <img src="{% static 'images/ucc.png' %}">
+       </div>
+       <div class="col-5">
+           <img src="{% static 'images/mtn.png' %}">
+       </div>
+       <div class="col-5">
+           <img src="{% static 'images/iv.png' %}">
+       </div>
+       <div class="col-5">
+           <img src="{% static 'images/ob.jfif' %}">
+       </div>
+       <div class="col-5">
+           <img src="{% static 'images/google.png' %}">
+       </div>
+   </div>
+</div>
+</div>
+<!--------------Footer-------------->
+<div class="footer">
+   <div class="container">
+       <div class="row">
+           <div class="footer-col-1">
+               <h3>Download Our App</h3>
+               <p>Download app for Android and iOS mobile phone.</p>
+               <div class="app-logo">
+                   <img src="{% static 'images/play-store.png' %}">
+                   <img src="{% static 'images/app-store.png' %}">
+               </div>
+            </div>
+           <div class="footer-col-2">
+               <img src="{% static 'images/ortis.jpg' %}">
+               <p>Our purpose is to bring together different ideas into fruition.</p>
+               <p>OTIM WILLIAM GERISON S19B23/421 A87886</p>
+           </div>
+           \0
+           <div class="footer-col-4">
+               <h3>Follow Us</h3>
+               <ul>
+                   <li>FaceBook</li>
+                   <li>Twitter</li>
+                   <li>Instagram</li>
+                   <li>WhatsApp</li>
+               </ul>
+           </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright 2021 - Otim Designs</p>
+   </div>
+</div>
+<!------Js for toggle menu------>
+<script>
+   var menuitems= document.getElementById("menuitems");
+   menuitems.style.maxHeight="0px";
+   function menutoggle(){
+       if(menuitems.style.maxHeight == "0px") {
+           menuitems.style.maxHeight="200px"
+       }
+       else
+       {
+           menuitems.style.maxHeight="0px"
+       }
+   }
+</script>
+   </body>
+</html>
